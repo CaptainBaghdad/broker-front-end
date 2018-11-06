@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link } from "react-router-dom";
 
 
 
@@ -7,12 +8,12 @@ class Nav extends Component{
 
     return (
         <div>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Broker-19</a>
+            <nav className="navbar navbar-expand-lg navbar-light bg-light">
+  <Link to="/">Broker-19</Link>
   
 
-  <button className="btn btn-success" >SignUp</button>
-  <button className="btn btn-success"> LogIn</button>
+  <Link to={`/signup`} className="btn btn-success" >SignUp</Link>
+  <Link to={`/login`} className="btn btn-success"> LogIn</Link>
   
 </nav>
         </div>

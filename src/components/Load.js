@@ -15,7 +15,7 @@ const Load = props => {
        <td>{props.load.load_type}</td>
        <td>{props.load.weight}</td>
        <td><button className="btn btn-danger">Select</button></td>
-       <hr></hr>
+       
        
 
       

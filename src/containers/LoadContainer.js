@@ -1,9 +1,10 @@
 import React from 'react';
 import Load from '../components/Load';
 
-import { fetchLoads } from '../actions/fetchLoads'
+import { fetchLoads } from '../actions/fetchLoads';
 
-import { connect } from 'react-redux'
+import { connect } from 'react-redux';
+
 
 class LoadContainer extends React.Component {
 
@@ -15,10 +16,10 @@ class LoadContainer extends React.Component {
     const singleLoad = this.props.loads.map(load => {
       return <Load key={load.id} load={load} />;
     });
-    console.log(singleLoad)
+   
     return (
     
-      <table className="table-dark">
+      <table className="table table-dark">
       <tbody>
         <tr>
           <th scope="col">
